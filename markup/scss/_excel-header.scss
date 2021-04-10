@@ -1,0 +1,44 @@
+.excel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+
+}
+
+.excel-header__input {
+  margin: 0;
+  padding: 2px 7px;
+  color: #000;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  height: 20px;
+  min-width: 1px;
+  font-size: 18px;
+  line-height: 22px;
+  outline: none;
+
+  &:hover {
+    border: 1px solid $border-color;
+  }
+
+  &:focus {
+    border: 2px solid #1a73e8;
+  }
+}
+
+.excel-header__controls {
+  list-style-type: none;
+  margin: 0 -5px;
+  padding: 0;
+  display: flex;
+}
+
+.excel-header__item {
+  padding: 0 5px;
+
+}
+
+.excel-header__button {
+  @include button();
+}

@@ -1,0 +1,61 @@
+.excel-table {
+  height: 100%;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+.excel-table__row {
+  display: flex;
+  flex-direction: row;
+  min-height: 20px;
+  height: 24px;
+}
+
+.excel-table__row-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  height: 100%;
+  border: 1px solid $border-color;
+  background-color: #f8f9fa;
+  border-top: none;
+}
+
+.excel-table__row-data {
+  display: flex;
+
+}
+
+.excel-table__column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  width: $cell-width;
+  height: 100%;
+  border: 1px solid $border-color;
+  background-color: #f8f9fa;
+  border-top: none;
+  border-left: none;
+
+}
+
+.excel-table__cell {
+  min-width: 40px;
+  padding: 5px;
+  width: $cell-width;
+  height: 100%;
+  border: 1px solid #e2e3e3;
+  border-top: none;
+  border-left: none;
+  color: #111;
+  word-spacing: nowrap;
+
+
+  &--selected {
+    border: none;
+    outline: 2px solid #3c74ff;
+    z-index: 2;
+  }
+}

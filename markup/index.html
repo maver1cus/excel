@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app" class="container">
+    <div class="excel">
+
+      <div class="excel__header excel-header">
+        <input class="excel-header__input" type="text" value="новая таблица">
+        <ul class="excel-header__controls">
+          <li class="excel-header__item">
+            <button class="excel-header__button">
+              <i class="material-icons">delete</i>
+            </button>
+          </li>
+          <li class="excel-header__item">
+            <button class="excel-header__button">
+              <i class="material-icons">exit_to_app</i>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="excel__toolbar excel-toolbar">
+        <ul class="excel-toolbar__controls">
+          <li class="excel-toolbar__item">
+            <button class="excel-toolbar__button">
+              <i class="material-icons">format_align_left</i>
+            </button>
+          </li>
+          <li class="excel-toolbar__item">
+            <button class="excel-toolbar__button">
+              <i class="material-icons">format_align_center</i>
+            </button>
+          </li>
+          <li class="excel-toolbar__item">
+            <button class="excel-toolbar__button">
+              <i class="material-icons">format_align_right</i>
+            </button>
+          </li>
+          <li class="excel-toolbar__item">
+            <button class="excel-toolbar__button">
+              <i class="material-icons">format_bold</i>
+            </button>
+          </li>
+          <li class="excel-toolbar__item">
+            <button class="excel-toolbar__button">
+              <i class="material-icons">format_italic</i>
+            </button>
+          </li>
+          <li class="excel-toolbar__item">
+            <button class="excel-toolbar__button">
+              <i class="material-icons">format_underlined</i>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="excel__formula excel-formula">
+        <div class="excel-formula__info">fx</div>
+        <div class="excel-formula__input" contenteditable spellcheck="false"></div>
+      </div>
+      <div class="excel__table excel-table">
+
+        <div class="excel-table__row">
+          <div class="excel-table__row-info"></div>
+          <div class="excel-table__row-data">
+            <div class="excel-table__column">
+              A
+            </div>
+            <div class="excel-table__column">
+              B
+            </div>
+            <div class="excel-table__column">
+              C
+            </div>
+          </div>
+        </div>
+
+        <div class="excel-table__row">
+          <div class="excel-table__row-info">1</div>
+          <div class="excel-table__row-data">
+            <div class="excel-table__cell excel-table__cell--selected" contenteditable>A1</div>
+            <div class="excel-table__cell" contenteditable>B1</div>
+            <div class="excel-table__cell" contenteditable>C1</div>
+          </div>
+        </div>
+
+        <div class="excel-table__row">
+          <div class="excel-table__row-info">2</div>
+          <div class="excel-table__row-data">
+            <div class="excel-table__cell" contenteditable>A2</div>
+            <div class="excel-table__cell" contenteditable>B2</div>
+            <div class="excel-table__cell" contenteditable>C2</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

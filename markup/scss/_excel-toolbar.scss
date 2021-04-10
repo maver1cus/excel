@@ -1,0 +1,22 @@
+.excel-toolbar {
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  padding: 5px 10px;
+}
+
+.excel-toolbar__controls {
+  list-style-type: none;
+  margin: 0 -5px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.excel-toolbar__item {
+  padding: 0 5px;
+}
+
+.excel-toolbar__button {
+  @include button();
+}
